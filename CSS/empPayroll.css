@@ -1,45 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
 
-body{
+body {
     margin: 0;
     height: 100%;
 }
-.header{
+
+.header {
     padding: 15px 0;
     background-color: #ffffff;
 }
-.header-content{
+
+.header-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
 }
-.logo-content{
+
+.logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid green;
     width: 80%;
 }
-.logo-content-img{ border: solid rgba(87, 55, 55, 0.658);}
-.emp-text{
-    font: normal normal bold 20px/25px Montserrat;
+
+.logo-content img {
+    border: solid 2px #42515f;
+
+}
+
+.emp-text {
+    display: block;
+    font: normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color:darkolivegreen;
+    margin-left: 5px;
+    color: #82a70c;
     text-transform: capitalize;
 }
-.emp-payroll{color: darkslategray;}
 
-*{box-sizing: border-box;}
-
+.emp-payroll {
+    color: #12515f;
+}
 
 .form-content {
     min-height: calc(100% - 80px);
     background-color: #f7f7f7;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
+
 .form {
     width: 65%;
     padding: 44px 60px;
@@ -50,6 +65,7 @@ body{
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #F5F5F5;
 }
+
 .form-head {
     font: normal normal bold 24px/37px Roboto;
     letter-spacing: 0px;
@@ -58,12 +74,14 @@ body{
     opacity: 1;
     padding-bottom: 20px;
 }
+
 .row-content {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
     align-items: center;
 }
+
 .label {
     min-width: 140px;
 }
@@ -87,6 +105,7 @@ label {
     border-radius: 4px;
     resize: vertical;
 }
+
 .profile-radio-content{
     display: flex;
     flex-direction: row;
@@ -103,7 +122,8 @@ label {
     border-radius: 50%;
     margin-left: 12px;
 }
-select{
+
+select {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -113,6 +133,7 @@ select{
     color: #42515f;
     background-color: transparent;
 }
+
 .buttonParent {
     display: flex;
     margin-bottom: 10px;
@@ -136,8 +157,11 @@ select{
     cursor: pointer;
 }
 
+.button:hover{
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+}
+
 .submitButton{
-    /* border: none; */
     background-color: #f5f5f5;
     margin-right: 30px;
 }
@@ -205,4 +229,9 @@ select{
         font-weight: bold;
     }
 
+    .button{
+        padding: 3px;
+        font-size: 16px;
+        min-width: 100px;
+    }
 }
